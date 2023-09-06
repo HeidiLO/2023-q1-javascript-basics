@@ -1,6 +1,7 @@
 let btn = document.getElementById("advice-button");
 let BTN = document.getElementById("dating-advice-button");
 let BN = document.getElementById("quotes-from-math");
+let Btn = document.getElementById("mystery");
 let output = document.getElementById("advice");
 let Output = document.getElementById("dating-advice");
 let advisors = [
@@ -32,6 +33,7 @@ let verbs = [
 	"delete",
 	"remove from life",
 	"ignore",
+	"act like",
 ];
 let adjectives = [
 	"spiky",
@@ -48,6 +50,20 @@ let adjectives = [
 	"uuhh one sec",
 	"hold one",
 	"uuh IDK",
+	"a crazed",
+	"red",
+	"orange",
+	"yellow",
+	"green",
+	"blue",
+	"purple",
+	"indigo",
+	"plum",
+	"hard",
+	"soft",
+	"hairy",
+	"quiet",
+	"off",
 ];
 let nouns = [
 	"desks",
@@ -61,6 +77,14 @@ let nouns = [
 	"water",
 	"man",
 	"uuhh um ",
+	"a litte boy named Jimmy",
+	"vampire",
+	"devil",
+	"zombie",
+	"a child",
+	"alien",
+	"words",
+	"nouns",
 ];
 let getRandomIndex = function (a) {
 	let rand = Math.random() * a.length;
@@ -115,6 +139,10 @@ let personalty = [
 	"short and",
 	"blonde and",
 	"blue eyed and",
+	"a small child and",
+	"an edgy teen and",
+	"rich and",
+	"no singlar chararitics and ",
 ];
 let likes = [
 	"likes feet",
@@ -226,6 +254,37 @@ let generateQuotes = function (q) {
 	console.log(randomQuotes);
 	return randomQuotes;
 };
+let getMystery = function (a) {
+	let rand = Math.random() * a.length;
+	return Math.floor(rand);
+};
+let getMysterys = function (a) {
+	return a[getRandomIndex(a)];
+};
+let generateMystery = function (a, w, h, v, wh, p, adj, n, wo, l) {
+	let randomMystery =
+		getRandomWord(a) +
+		" " +
+		getRandomWord(w) +
+		" " +
+		getRandomWord(h) +
+		" " +
+		getRandomWord(v) +
+		" " +
+		getRandomWord(wh) +
+		" " +
+		getRandomWord(p) +
+		" " +
+		getRandomWord(adj) +
+		" " +
+		getRandomWord(n) +
+		" " +
+		getRandomWord(wo) +
+		" " +
+		getRandomWord(l);
+	console.log(randomMystery);
+	return randomMystery;
+};
 btn.addEventListener("click", function () {
 	let advice = generateAdvice(advisors, howOften, verbs, adjectives, nouns);
 	output.textContent = advice;
@@ -237,4 +296,19 @@ BTN.addEventListener("click", function () {
 BN.addEventListener("click", function () {
 	let quote = generateQuotes(quotes);
 	output.textContent = quote;
+});
+Btn.addEventListener("click", function () {
+	let mystery = generateMystery(
+		advisors,
+		when,
+		howOften,
+		verbs,
+		whom,
+		personalty,
+		adjectives,
+		nouns,
+		who,
+		likes
+	);
+	output.textContent = mystery;
 });
