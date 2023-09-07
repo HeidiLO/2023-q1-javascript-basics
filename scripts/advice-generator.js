@@ -242,6 +242,17 @@ let quotes = [
 	"That really f**king big",
 	"Be better than the chair",
 ];
+let non = ["life", "smile", "hair", "child", "a", "I"];
+let end = [
+	"bye",
+	"see you later",
+	"don't come back",
+	"have a good life",
+	"hello not",
+	"see ya",
+	"bye bye",
+	"adios",
+];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
 	return Math.floor(rand);
@@ -261,11 +272,13 @@ let getMystery = function (a) {
 let getMysterys = function (a) {
 	return a[getRandomIndex(a)];
 };
-let generateMystery = function (a, w, h, v, wh, p, adj, n, wo, l) {
+let generateMystery = function (a, w, no, h, v, wh, p, adj, n, wo, l, e) {
 	let randomMystery =
 		getRandomWord(a) +
 		" " +
 		getRandomWord(w) +
+		" " +
+		getRandomWord(no) +
 		" " +
 		getRandomWord(h) +
 		" " +
@@ -281,7 +294,9 @@ let generateMystery = function (a, w, h, v, wh, p, adj, n, wo, l) {
 		" " +
 		getRandomWord(wo) +
 		" " +
-		getRandomWord(l);
+		getRandomWord(l) +
+		" " +
+		getRandomWord(e);
 	console.log(randomMystery);
 	return randomMystery;
 };
@@ -301,6 +316,7 @@ Btn.addEventListener("click", function () {
 	let mystery = generateMystery(
 		advisors,
 		when,
+		non,
 		howOften,
 		verbs,
 		whom,
@@ -308,7 +324,8 @@ Btn.addEventListener("click", function () {
 		adjectives,
 		nouns,
 		who,
-		likes
+		likes,
+		end
 	);
 	output.textContent = mystery;
 });
