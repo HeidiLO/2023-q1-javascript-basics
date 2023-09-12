@@ -2,6 +2,8 @@ let btn = document.getElementById("advice-button");
 let BTN = document.getElementById("dating-advice-button");
 let BN = document.getElementById("quotes-from-math");
 let Btn = document.getElementById("mystery");
+let bn = document.getElementById("book");
+let b = document.getElementById("Hope");
 let output = document.getElementById("advice");
 let Output = document.getElementById("dating-advice");
 let advisors = [
@@ -143,6 +145,8 @@ let personalty = [
 	"an edgy teen and",
 	"rich and",
 	"no singlar chararitics and ",
+	"an actor",
+	"food and",
 ];
 let likes = [
 	"likes feet",
@@ -157,7 +161,26 @@ let likes = [
 	"has anxitey",
 	"is meantally ill",
 	"likes math",
+	"likes acting",
 ];
+let hope = [
+	"Moscow Moscow Moscow Putin is hot",
+	"I could just fail out of launge arts",
+	"I have a lot of problems",
+	"yive yive yive",
+	"Thats kinky",
+	"I like balls",
+	"Talk to him to see how willing he is to cheat on his wife",
+	"We ate our grandmas",
+];
+let getRandomHope = function (a) {
+	return a[getRandomIndex(a)];
+};
+let generateHope = function (h) {
+	let randomHope = getRandomPeople(h);
+	console.log(randomHope);
+	return randomHope;
+};
 let getRandomWords = function (a) {
 	let rand = Math.random() * a.length;
 	return Math.floor(rand);
@@ -180,6 +203,7 @@ let generateDatingAdvice = function (wh, wo, wm, p, l) {
 	return randomDatingAdvice;
 };
 let quotes = [
+	"Thats ioprite take a lap",
 	"You might get hit by a truck",
 	"I like balls",
 	"Cows don't have that",
@@ -190,7 +214,7 @@ let quotes = [
 	"I am trying to confuess the drug adtict",
 	"But.... then sun have been eclipesped by the moon",
 	"i love it",
-	"Nnless you rip your face off then you'll have none left",
+	"Unless you rip your face off then you'll have none left",
 	"Hunderent",
 	"Unless of course I die",
 	"Then that hail comes and ruins all the shit you planted",
@@ -253,6 +277,28 @@ let end = [
 	"bye bye",
 	"adios",
 ];
+let book = [
+	"He was eating toast plain toast with nothing on it have you ever seen someone eat toast with nothing on it haowing truly",
+	"Almost plumting to death in front of a stadium of screaming pepole is alawys a warning sign in a cosntant prade of warning signs latley that I need more sleep",
+	"I want Ranier to win, I want to face Canning in the final, I want to pretend I still don't have fellings for the guy I guess I will have to be satisfied with 2 out of the 3 because I can't pertend I still don't have feelings for the guy, seeing him last night made that ipossible fuck he looked good all that big boy Califina hotness and sexy as fuck ",
+	"Jesus baby don't stop",
+	"My eyes want to go lower to foucs on the perkines of his ass how his cock fills out his underwear. was he always that big. Did I miss it",
+	"You better act like the sunshine out of his dick and you better make me belive it",
+	"I am gulity of loving you",
+	"The only problem is I want to be toching him back everywere",
+	"Yay Arson",
+	"Fine it was a pharmisotcal company whose dugs let me be very clear have not proven to have killed any children at all",
+	"Step one is ganing the ducks trust",
+	"Te Quireo not not te quireo te amo te amo te amo",
+	"Angle is lying on the floor and not moving",
+	"Fuck Zach",
+	"I want so badly right now to press Kian Andrews into one of those trees over there and kiss him until he can't think straight if he will let me",
+	"squeeze here and don't you dare stop fucking riding me Kian",
+	"I am head over heels in love with you too",
+	"And not geting to relive the best kiss of my life is a prety big incovinnce",
+	"My world was reduced to his my best friend my lover my.... fiance",
+	"Just as I feel the police slam into me my day resits",
+];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
 	return Math.floor(rand);
@@ -300,6 +346,18 @@ let generateMystery = function (a, w, no, h, v, wh, p, adj, n, wo, l, e) {
 	console.log(randomMystery);
 	return randomMystery;
 };
+let getRandomthings = function (a) {
+	let rand = Math.random() * a.length;
+	return Math.floor(rand);
+};
+let getRandomothers = function (a) {
+	return a[getRandomIndex(a)];
+};
+let generateBook = function (q) {
+	let randomBook = getRandomothers(q);
+	console.log(randomBook);
+	return randomBook;
+};
 btn.addEventListener("click", function () {
 	let advice = generateAdvice(advisors, howOften, verbs, adjectives, nouns);
 	output.textContent = advice;
@@ -328,4 +386,12 @@ Btn.addEventListener("click", function () {
 		end
 	);
 	output.textContent = mystery;
+});
+bn.addEventListener("click", function () {
+	let Book = generateBook(book);
+	output.textContent = Book;
+});
+b.addEventListener("click", function () {
+	let Hopes = generateHope(hope);
+	output.textContent = Hopes;
 });
