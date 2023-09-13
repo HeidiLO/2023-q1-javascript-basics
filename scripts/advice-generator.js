@@ -265,6 +265,12 @@ let quotes = [
 	"IDK shit happens",
 	"That really f**king big",
 	"Be better than the chair",
+	"cauclate your days away",
+	"Its okay Jeff you could rock the crop top",
+	"I could wrap a belt around it and call it a dress",
+	"Your hard?",
+	"Do you need a hug",
+	"But, know I have to teach math",
 ];
 let non = ["life", "smile", "hair", "child", "a", "I"];
 let end = [
@@ -298,6 +304,20 @@ let book = [
 	"And not geting to relive the best kiss of my life is a prety big incovinnce",
 	"My world was reduced to his my best friend my lover my.... fiance",
 	"Just as I feel the police slam into me my day resits",
+	"I am not going to let you commit arson...... today",
+	"Stella Storino bought me weed!!!",
+	"And zeke may have given me an edible. WHEN DID ZEKE GIVE YOU AN EDIBLE",
+	"KISS ME HARD.. 'I want my cheer sweatshirt back'",
+	"Are going to jail for stealing tea",
+	"Its not like I woke up one day and was like I am sudenly gay now",
+	"Witch is why Liz was about to be brutaly mudered by here roomate",
+	"Ruben was showing me a....... thing ",
+	"Its is one thing in our collection that we own and did not just steal",
+	"I don't think I can breath agin for the rest of the drive",
+	"Zuben is here to but it's nothing compared to realm that is anjon",
+	"I am a laywer not Elton fucking Jhon",
+	"Houston we have a penis ",
+	"I wonder what it would fell like to pull off his shirt and fell his soft skin under mine",
 ];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
