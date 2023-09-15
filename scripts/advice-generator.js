@@ -271,6 +271,22 @@ let quotes = [
 	"Your hard?",
 	"Do you need a hug",
 	"But, know I have to teach math",
+	"I am more impoortant then any thing else you have to do today ",
+	"I had a cat once but my girlfriend stole it",
+	"Stella did I ignore you too much",
+	"Or we could lisen to inoprate things ",
+	"My work here is done its time to go smoke a cigar",
+	"Is he on drugs?",
+	"It is not going to effect the econmy in Argentina",
+	"Cause I am not as smart as he is ",
+	"If you have any questions I am not going to answer them",
+	"After yeterday she is drama ",
+	"Hundert is the way us cool kids say it",
+	"It is not racits it is vechlistes",
+	"Your as nice as a spiky ball",
+	"Ya Axels crazy",
+	"It smells like we are ready to take a test",
+	"Put your hand down if you never peeded in the ocean",
 ];
 let non = ["life", "smile", "hair", "child", "a", "I"];
 let end = [
@@ -295,7 +311,7 @@ let book = [
 	"Yay Arson",
 	"Fine it was a pharmisotcal company whose dugs let me be very clear have not proven to have killed any children at all",
 	"Step one is ganing the ducks trust",
-	"Te Quireo not not te quireo te amo te amo te amo",
+	"Te Quireo no not te quireo te amo te amo te amo",
 	"Angle is lying on the floor and not moving",
 	"Fuck Zach",
 	"I want so badly right now to press Kian Andrews into one of those trees over there and kiss him until he can't think straight if he will let me",
@@ -318,6 +334,11 @@ let book = [
 	"I am a laywer not Elton fucking Jhon",
 	"Houston we have a penis ",
 	"I wonder what it would fell like to pull off his shirt and fell his soft skin under mine",
+	"I fucking love you ok ",
+	"Bein' with ya at dinner, Sitn' next to you, hearing ya talkn' its to much so like fuck self contral come back to my hotel with me tonight",
+	"I couldn' sleep or stop thinkn' 'bout you",
+	"Come down to the lighthouse",
+	"How many times have I told you to not talk about murder plans in front of the me the siting presdent",
 ];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
