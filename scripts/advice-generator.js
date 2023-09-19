@@ -339,6 +339,13 @@ let book = [
 	"I couldn' sleep or stop thinkn' 'bout you",
 	"Come down to the lighthouse",
 	"How many times have I told you to not talk about murder plans in front of the me the siting presdent",
+	"Vicky classic",
+	"This guy does the best free style raps",
+	"3 words I would use to describe Henry white, blond, british",
+	"COME IN HERE IT IS AN EMERGECTY",
+	"I thought you almost burned down the building again",
+	"I just love hanging out with this guy",
+	"Ruben get quiet and speaks in almost a wisper 'What if you figured out you like guys but you too afrid to do any thing about it because then it would become real' I can't lie and Ruben seems to get it like really get I wonder if he went trough somthing like this when he was younger I wounder if all queer people do. So I nod. 'You think you might be queer' 'ya' I wince 'I think I might be bi' 'Shit man this is huge' 'Are you suprised' 'I guess I sould not be given last week but I am I mean of course I thought about it I mean I wan- I just keept deciding you were not' 'right' but wait what was that he wanted for me to be bi. Why would he. and then it hits me I kissed him and themn I was cold and distent whitch would be heartbreaking if someone you liked or starterd to like kissed you and acted that way. God I am so stupid never in a millon years did I think that Ruben would like me in that way. 'Any way let's not make thins about me how do you feel' 'Its nevrwraking but in a good way' This feels so pefrcat siting here under the street lights eating stroopwaffels with Ruben. 'Are you refering to the fact that you like all guys or just' he glances up a clear signal and I want to really want to. So I lean across and put my hands on his face. What if I screw this up what if I kiss him and hate it. I move my hands an inch away. Rubes eyes open his brows fuower. Fuck I am screwing this up I am screwing very thing up latley oh fuck it. I lean across and put everything I have onto this kiss. I run my hands up through is haor his pefcfact hair and smell his coloagne and taste the sugar on his lips. Its like fireworks in my chest. ",
 ];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
