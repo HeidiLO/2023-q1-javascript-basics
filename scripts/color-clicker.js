@@ -11,14 +11,15 @@ class ClickShape {
 	constructor() {
 		this.X = 0;
 		this.Y = 0;
-		this.width = 25;
-		this.height = 25;
+		this.width = 100;
 		this.xDirection = 0;
 		this.yDirection = 1;
-		this.speed = 10;
+		this.speed = 5;
 		this.isVisible = true;
-		this.isClicked = true;
+		this.isClicked = false;
 		this.color = "silver";
+		/**@type {Path2D | undefined} */
+		this.path;
 	}
 	movingDirection() {
 		if (this.xDirection === 0 && this.yDirection === 1) {
@@ -54,8 +55,18 @@ class ClickShape {
 		this.Y += this.yDirection * this.speed;
 	}
 	draw() {
-		ctx.fillStyle = this.color;
-		ctx.fillRect(this.X, this.Y, this.width, this.height);
+		ctx.fillStyle = this.isClicked ? "silver" : this.color;
+		this.path = new Path2D();
+		this.path.rect(this.X, this.Y, this.width, this.width);
+		ctx.fill(this.path);
+	}
+	checkForClicked(x, y) {
+		if (this.isClicked) {
+			return;
+		}
+		//@ts-ignore
+		this.isClicked = ctx.isPointInPath(this.path, x, y);
+		6;
 	}
 }
 class Game {
@@ -69,7 +80,6 @@ class Game {
 			"blue",
 			"indigo",
 			"violet",
-			"black",
 			"brown",
 			"plum",
 			"pink",
@@ -93,9 +103,7 @@ class Game {
 		let s = new ClickShape();
 		s.color = this.getRandomColor();
 		s.Y = 0 - s.width;
-		let randX = Math.floor(
-			Math.random() * (canvas.width / s.width - s.width)
-		);
+		let randX = Math.floor(Math.random() * (canvas.width / s.width));
 		s.X = randX * s.width;
 		this.shapes.push(s);
 	}
@@ -104,10 +112,16 @@ class Game {
 		this.shapes.forEach((s) => {
 			s.update();
 		});
+		this.shapes = this.shapes.filter((s) => s.isVisible);
 	}
 	draw() {
 		this.shapes.forEach((s) => {
 			s.draw();
+		});
+	}
+	checkForClicked(x, y) {
+		this.shapes.forEach((s) => {
+			s.checkForClicked(x, y);
 		});
 	}
 }
@@ -123,3 +137,7 @@ let gameLoop = function (timestamp) {
 	window.requestAnimationFrame(gameLoop);
 };
 window.requestAnimationFrame(gameLoop);
+canvas.addEventListener("click", (ev) => {
+	console.log("mouse event", ev.offsetX, ev.offsetY);
+	game.checkForClicked(ev.offsetX, ev.offsetY);
+});
