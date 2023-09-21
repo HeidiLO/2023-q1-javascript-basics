@@ -72,6 +72,7 @@ class ClickShape {
 class Game {
 	constructor() {
 		this.score = 0;
+		this.isGameOver = false;
 		this.colors = [
 			"red",
 			"orange",
@@ -123,6 +124,17 @@ class Game {
 		this.shapes.forEach((s) => {
 			s.checkForClicked(x, y);
 		});
+		let clickedShapes = this.shapes.filter((s) => s.isClicked);
+		if (clickedShapes.length === 0) {
+			return;
+		}
+		if (
+			clickedShapes[clickedShapes.length - 1].color === this.targetColor
+		) {
+			this.score++;
+		} else {
+			this.isGameOver = true;
+		}
 	}
 }
 let game = new Game();
