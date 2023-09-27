@@ -4,6 +4,7 @@ let BN = document.getElementById("quotes-from-math");
 let Btn = document.getElementById("mystery");
 let bn = document.getElementById("book");
 let b = document.getElementById("Hope");
+let n = document.getElementById("Story");
 let output = document.getElementById("advice");
 let Output = document.getElementById("dating-advice");
 let advisors = [
@@ -287,6 +288,40 @@ let quotes = [
 	"Ya Axels crazy",
 	"It smells like we are ready to take a test",
 	"Put your hand down if you never peeded in the ocean",
+	"After yeaterday she is drama",
+	"I neglated you guys and I am sorry",
+	"That smells like we are ready to take a test",
+	"I hate wet balls",
+	"Murdeing Alice and then we really will have an issue",
+	"And you are already in prison,",
+	"If you don't say the x in Axles name ",
+	"You can not be good at singing you are already good at math",
+	"You could die from somthing fun like an Orcea whale eating you",
+	"I got bit by a shark, but that is not really impotant",
+	"No body wants to eat dates they taste like ass",
+	"'But tail gating is very good for my gas milagae' 'But tailgating is not good for my anxitey'",
+	"Is this because I am gay are you being homophobic",
+	"I sometime like to do math on the board and when I do I choose expo brand marker",
+	"I almost had it right and then I had to kill all the frogs",
+	"I think he ate the frogs",
+	"God bless you unless you not religous then gustian tight unless you not German",
+	"Don't do drugs",
+	"I almost cut off you knee",
+	"I could probly cut off my finger with this peice now",
+	"The world is always trying to punish you Jeff",
+	"The world is trying to screw Jeff over today",
+	"You can do anything cause you Heidi",
+	"Murder is right in the middle",
+	"Is canbalism really that bad",
+	"Is bombing people all that bad",
+	"Thi is not the time or place for your mom jokes",
+	"He put to many shrooms in his coffee",
+	"Poor canaida",
+	"I do not speak french or maple syurp",
+	"I do not call those mistakes I call the shit happens",
+	"I am trevor the guy that smokes a lot of weed",
+	"If I hit this bitch with a train",
+	"It is the evil crimnal that hits people with trains",
 ];
 let non = ["life", "smile", "hair", "child", "a", "I"];
 let end = [
@@ -325,6 +360,7 @@ let book = [
 	"And zeke may have given me an edible. WHEN DID ZEKE GIVE YOU AN EDIBLE",
 	"KISS ME HARD.. 'I want my cheer sweatshirt back'",
 	"Are going to jail for stealing tea",
+	"I want a bacon sandwitch",
 	"Its not like I woke up one day and was like I am sudenly gay now",
 	"Witch is why Liz was about to be brutaly mudered by here roomate",
 	"Ruben was showing me a....... thing ",
@@ -345,7 +381,7 @@ let book = [
 	"COME IN HERE IT IS AN EMERGECTY",
 	"I thought you almost burned down the building again",
 	"I just love hanging out with this guy",
-	"Ruben get quiet and speaks in almost a wisper 'What if you figured out you like guys but you too afrid to do any thing about it because then it would become real' I can't lie and Ruben seems to get it like really get I wonder if he went trough somthing like this when he was younger I wounder if all queer people do. So I nod. 'You think you might be queer' 'ya' I wince 'I think I might be bi' 'Shit man this is huge' 'Are you suprised' 'I guess I sould not be given last week but I am I mean of course I thought about it I mean I wan- I just keept deciding you were not' 'right' but wait what was that he wanted for me to be bi. Why would he. and then it hits me I kissed him and themn I was cold and distent whitch would be heartbreaking if someone you liked or starterd to like kissed you and acted that way. God I am so stupid never in a millon years did I think that Ruben would like me in that way. 'Any way let's not make thins about me how do you feel' 'Its nevrwraking but in a good way' This feels so pefrcat siting here under the street lights eating stroopwaffels with Ruben. 'Are you refering to the fact that you like all guys or just' he glances up a clear signal and I want to really want to. So I lean across and put my hands on his face. What if I screw this up what if I kiss him and hate it. I move my hands an inch away. Rubes eyes open his brows fuower. Fuck I am screwing this up I am screwing very thing up latley oh fuck it. I lean across and put everything I have onto this kiss. I run my hands up through is haor his pefcfact hair and smell his coloagne and taste the sugar on his lips. Its like fireworks in my chest. ",
+	"'I could suggest some things and if any of them seem right you could nod or somthing' 'Sure yeah' 'Okay waht if you were so drunk that you thought I was a girl but, when you woke up you freaked out cause I am a guy' I don't move. 'Okay what if you would have kissed any one in the same room as you but, you hated it' I don't move again. 'What if you had kissing a guy om you bucket lidt but, hated it and did not know how to tell me' 'Keep trying this is helping' 'You were so upset that you were not on that list and I made you feel atrivtive and you misstaked it for real atration' 'I mean maybe that is a part of it but, there is more to it' Ruben get quiet and speaks in almost a wisper 'What if you figured out you like guys but you too afrid to do any thing about it because then it would become real' I can't lie and Ruben seems to get it like really get I wonder if he went trough somthing like this when he was younger I wounder if all queer people do. So I nod. 'You think you might be queer' 'ya' I wince 'I think I might be bi' 'Shit man this is huge' 'Are you suprised' 'I guess I sould not be given last week but I am I mean of course I thought about it I mean I wan- I just keept deciding you were not' 'right' but wait what was that he wanted for me to be bi. Why would he. and then it hits me I kissed him and themn I was cold and distent whitch would be heartbreaking if someone you liked or starterd to like kissed you and acted that way. God I am so stupid never in a millon years did I think that Ruben would like me in that way. 'Any way let's not make thins about me how do you feel' 'Its nevrwraking but in a good way' This feels so pefrcat siting here under the street lights eating stroopwaffels with Ruben. 'Are you refering to the fact that you like all guys or just' he glances up a clear signal and I want to really want to. So I lean across and put my hands on his face. What if I screw this up what if I kiss him and hate it. I move my hands an inch away. Rubes eyes open his brows fuower. Fuck I am screwing this up I am screwing very thing up latley oh fuck it. I lean across and put everything I have onto this kiss. I run my hands up through is haor his pefcfact hair and smell his coloagne and taste the sugar on his lips. Its like fireworks in my chest. Ruben reches up and softly pushes me back 'Wait' he sighs ' we should not do this outside someone could see' 'right' We walk back to the hotel walking closer then we should of. Our fingers ocnally toching until one of us pulls back. We climb up the ladder much faster then comimg down. As soon as I reach the elvator I press the button. Then Ruben pushed me agaist the cold brick wall. He kiss me it as good as. Better then I remeber. He pulls back and rest his head agaist mine 'Hey' 'Hey' 'Sorry no warning' 'I am not complaing' As soon as the elvator door closes we are all over each other. The kiss and our hands are frantic but in the best way possible. The evlvator dings and we spring apart but, there is no one in the hallway so we start up again. Sudenly he is up against the wall and I am kissing his neck and then I am up agaist the wall and he is grinding agaist me. I think we need to go into a room before my knees give out.",
 	"His lips are right there",
 	"The last night in the Haptions I really wanted to kiss you but, this was worth the wait",
 	"'Dylan', he says my name in a way he never has before",
@@ -357,6 +393,159 @@ let book = [
 	"'I want to court you' I have read enough of my moms romance novels to know what that means 'Do you know what that means' 'Yes' 'so you know that mean dating with the intention to marry right' 'Yes I know I want to court you'",
 	"His hands go lower lower",
 	"The way his eyes roll back when I",
+	"'Ben I' he comes for me with the sweetest moan",
+	"A great love story between a certifid chaous demon and a fun brunch loving daddy ",
+	"Sudenly I know without a doubt that I would kiss him again",
+	"His har is short and his back is well museled still the kiss was everthing a kiss should be. I was sweet and all cosmuing I do not think there is anything I have wanted more than to kiss him again to never stop kissing him",
+	"Cause murder is bad or somthing ",
+	"When I look at the clock it reads 9:16:09",
+	"He is reading romance again",
+	"This is not wired what would be weird would be if my grandma had mints in her pusre and not edibles",
+	"I love you, I love you ben",
+	"Shut up and kiss me already",
+	"'It is taking every thing I have not to press you into that contuer over there Parish. Bake quikly it is imptarnt to me, I want to taste what you make' He leans in closer 'And then I want to taste you' I swallow hard 'Who says baking can't be foreplay' 'I think that would be agist health reglations' 'I don't see any heath insptors here do you'",
+	"Before his mouth even mets my most sentive place. My hands are balled into the sheets. I am gone for Adam Reed",
+	"'4' 'What' 'You missed a miunte' 'You did not step forward' 'Ben look at me' He steps back and I see his hard length 'I want you to see how much I want you' He makes eye contact with me 'I am not going to break the rules'",
+	"Fuck Kiran",
+	"His own hard on press agaist my own need",
+	"'Tell me I can touch you' His pupils blow wide 'Hurry' ",
+	"He press my hand to his chest and I feel his heart beting 'this is yours'",
+	"'If you keep touching me we won't get anything done' I bit my lip 'would that be so bad' His eyes darken 'it is taking every thing I have not to press you into that contuer over there. Parish. Bake. Quickly. this is imptant to me I want to taste what you make' He leans in 'And then I want to taste you' I swallow hard 'who says baking can't be foreplay' 'Is that agaist like all the heath rules' 'I do not see any heath inspetors here do you' ",
+	"Please not be the tea",
+];
+let seting = [
+	"in hell",
+	"on earth",
+	"in space",
+	"at school",
+	"in the ocean",
+	"at your home",
+	"in a forest",
+	"in a feild",
+	"in a jail",
+	"at Higgs",
+	"at Trunchman",
+	"in Flodia",
+	"in Rome",
+	"in a place only metionted in fairy tails",
+];
+let main = [
+	"a teacher",
+	"a stranger",
+	"a murderer",
+	"a doctor",
+	"a farmer",
+	"someone plays for the Yankies",
+	"a dancer",
+	"a lumber jack",
+	"an actor",
+	"a climber",
+	"a first resonder",
+	"a plumer",
+	"a race car driver",
+	"a murder",
+	"a mailman",
+	"a milkman",
+	"a mother",
+	"a teen",
+	"a father",
+	"a baby",
+	"a child",
+	"who is smart ",
+	"who is funny ",
+	"who is stupid a",
+	"who is charsmatic ",
+	"has dated a girl named Christina and",
+	"who is crazy ",
+	"a sufer",
+	"who is tall",
+	"who is short",
+	"who is blonde",
+	"who is blue eyed",
+	"a small child",
+	"an edgy teen",
+	"who is rich ",
+	"who has no singlar chararitics",
+	"an actor",
+	"a piece food",
+];
+let Name = [
+	"You should write about someone named Ruben",
+	"You should write about someone named Zach",
+	"You should write about someone named Jon",
+	"You should write about someone named Pairs",
+	"You should write about someone named Heidi",
+	"You should write about someone named Tori",
+	"You should write about someone named Ander",
+	"You should write about someone named Santi",
+	"You should write about someone named Ryan",
+	"You should write about someone named Jamie",
+	"You should write about someone named Bella",
+	"You should write about someone named Kosko",
+	"You should write about someone named Frankie",
+	"You should write about someone named Dexter",
+	"You should write about someone named Piper",
+	"You should write about someone named Sydney",
+	"You should write about someone named Suzane",
+	"You should write about someone named Elle",
+	"You should write about someone named Stella",
+	"You should write about someone named Adam",
+	"You should write about someone named Ben",
+	"You should write about someone named Lauren",
+	"You should write about someone named Hope",
+	"You should write about someone named Nathen",
+	"You should write about someone named Blake",
+	"You should write about someone named James",
+	"You should write about someone named Arron",
+	"You should write about someone named Hilda",
+];
+let lastName = [
+	"Wesley",
+	"Lee",
+	"Janovisky",
+	"Robernsion",
+	"Karger",
+	"Bownen",
+	"Oeasman",
+	"Hall",
+	"Storina",
+	"Sebattion",
+	"Osburn",
+	"Jhonson",
+	"Delcovo",
+	"England",
+	"Rincon",
+	"Tomas",
+	"Luacks",
+	"Didodmazo",
+	"Kos",
+];
+let does = [
+	"who saves the world",
+	"who is actally a mob boss",
+	"who is clinically insane and thinks they are michael holden by delusion",
+	"who writes books",
+	"who loves men",
+	"who loves women",
+	"who kills there best firend",
+	"who wins races",
+	"who lives in a world",
+	"who bulids houses",
+	"who kisses his grandma",
+	"who loves apple pie",
+	"who eats glass",
+	"who eats babies",
+	"who loves.... loves... kids",
+	"who runs with their family",
+	"who swims in their fav. place",
+	"who eats everthing they find or comes within 5 feet of them",
+	"who climbs a hill called 'somthing'",
+	"who dances with their sister",
+	"who lives with a serail killer",
+	"who kills their teacher",
+	"who murders their boss",
+	"who ignores the laws ",
+	"who acts like a crab",
 ];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
@@ -417,6 +606,23 @@ let generateBook = function (q) {
 	console.log(randomBook);
 	return randomBook;
 };
+let getRandomthers = function (a) {
+	return a[getRandomIndex(a)];
+};
+let generateStory = function (n, l, m, d, s) {
+	let randomStory =
+		getRandomWord(n) +
+		" " +
+		getRandomWord(l) +
+		" " +
+		getRandomWord(m) +
+		" " +
+		getRandomWord(d) +
+		" " +
+		getRandomWord(s);
+	console.log(randomStory);
+	return randomStory;
+};
 btn.addEventListener("click", function () {
 	let advice = generateAdvice(advisors, howOften, verbs, adjectives, nouns);
 	output.textContent = advice;
@@ -453,4 +659,8 @@ bn.addEventListener("click", function () {
 b.addEventListener("click", function () {
 	let Hopes = generateHope(hope);
 	output.textContent = Hopes;
+});
+n.addEventListener("click", function () {
+	let Story = generateStory(Name, lastName, main, does, seting);
+	output.textContent = Story;
 });

@@ -7,8 +7,22 @@ const canvas = document.getElementById("game-canvas");
 const ctx = canvas.getContext("2d");
 canvas.width = 800;
 canvas.height = 600;
+/** @type {HTMLCanvasElement} */
+//@ts-ignore canvas is an HTMLCanvasElement
+const scoreCanvas = document.getElementById("score-canvas");
+/** @type {CanvasRenderingContext2D} */
+//@ts-ignore we know ctx is not null
+const scoreCtx = scoreCanvas.getContext("2d");
+scoreCanvas.width = 800;
+scoreCanvas.height = 50;
 class ClickShape {
-	constructor() {
+	/**
+	 * @param {CanvasRenderingContext2D} [ctx]
+	 */
+	constructor(ctx) {
+		/**@type {CanvasRenderingContext2D} */
+		//@ts-ignore
+		this.ctx = ctx;
 		this.X = 0;
 		this.Y = 0;
 		this.width = 100;
@@ -55,10 +69,10 @@ class ClickShape {
 		this.Y += this.yDirection * this.speed;
 	}
 	draw() {
-		ctx.fillStyle = this.isClicked ? "silver" : this.color;
+		this.ctx.fillStyle = this.isClicked ? "silver" : this.color;
 		this.path = new Path2D();
 		this.path.rect(this.X, this.Y, this.width, this.width);
-		ctx.fill(this.path);
+		this.ctx.fill(this.path);
 	}
 	checkForClicked(x, y) {
 		if (this.isClicked) {
@@ -86,10 +100,20 @@ class Game {
 			"pink",
 		];
 		this.targetColor = this.getRandomColor();
+		this.targetShape = this.getRandomTargetShape();
 		/**@type {Array<ClickShape>} */
 		this.shapes = [];
-		this.spawnInterval = 500;
+		this.spawnInterval = 1000;
 		this.lastSpawnTime = 0;
+	}
+	getRandomTargetShape() {
+		let s = new ClickShape();
+		s.color = this.targetColor;
+		s.width = scoreCanvas.height * 0.8;
+		s.X = scoreCanvas.width / 2 - s.width / 2;
+		s.Y = 45;
+		6;
+		return s;
 	}
 	getRandomColor() {
 		let randomIndex = Math.floor(Math.random() * this.colors.length);
@@ -101,7 +125,7 @@ class Game {
 			return;
 		}
 		this.lastSpawnTime = 0;
-		let s = new ClickShape();
+		let s = new ClickShape(ctx);
 		s.color = this.getRandomColor();
 		s.Y = 0 - s.width;
 		let randX = Math.floor(Math.random() * (canvas.width / s.width));
@@ -119,6 +143,10 @@ class Game {
 		this.shapes.forEach((s) => {
 			s.draw();
 		});
+		scoreCtx.font = "40px fantasy";
+		scoreCtx.fillStyle = "gold";
+		scoreCtx.fillText(`Score: ${this.score}`, 0, 45);
+		this.targetShape.draw();
 	}
 	checkForClicked(x, y) {
 		this.shapes.forEach((s) => {
@@ -142,6 +170,7 @@ console.log(game);
 let currentTime = 0;
 let gameLoop = function (timestamp) {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	scoreCtx.clearRect(0, 0, canvas.width, canvas.height);
 	let elapsedTime = timestamp - currentTime;
 	currentTime = timestamp;
 	game.update(elapsedTime);
