@@ -68,12 +68,7 @@ class ClickShape {
 		this.X += this.xDirection * this.speed;
 		this.Y += this.yDirection * this.speed;
 	}
-	draw() {
-		this.ctx.fillStyle = this.isClicked ? "silver" : this.color;
-		this.path = new Path2D();
-		this.path.rect(this.X, this.Y, this.width, this.width);
-		this.ctx.fill(this.path);
-	}
+	draw() {}
 	checkForClicked(x, y) {
 		if (this.isClicked) {
 			return;
@@ -81,6 +76,34 @@ class ClickShape {
 		//@ts-ignore
 		this.isClicked = ctx.isPointInPath(this.path, x, y);
 		6;
+	}
+}
+class SquareClickShape extends ClickShape {
+	/**
+	 * @param {CanvasRenderingContext2D} [ctx]
+	 */
+	constructor(ctx) {
+		super(ctx);
+	}
+	draw() {
+		this.ctx.fillStyle = this.isClicked ? "silver" : this.color;
+		this.path = new Path2D();
+		this.path.rect(this.X, this.Y, this.width, this.width);
+		this.ctx.fill(this.path);
+	}
+}
+class CircleClickShape extends ClickShape {
+	/**
+	 * @param {CanvasRenderingContext2D} [ctx]
+	 */
+	constructor(ctx) {
+		super(ctx);
+	}
+	draw() {
+		this.ctx.fillStyle = this.isClicked ? "silver" : this.color;
+		this.path = new Path2D();
+		this.path.arc(this.X, this.Y, this.width / 2, 0, Math.PI * 2);
+		this.ctx.fill(this.path);
 	}
 }
 class Game {
@@ -99,7 +122,6 @@ class Game {
 			"plum",
 			"pink",
 		];
-		this.targetColor = this.getRandomColor();
 		this.targetShape = this.getRandomTargetShape();
 		/**@type {Array<ClickShape>} */
 		this.shapes = [];
@@ -107,12 +129,11 @@ class Game {
 		this.lastSpawnTime = 0;
 	}
 	getRandomTargetShape() {
-		let s = new ClickShape();
-		s.color = this.targetColor;
+		let s = new ClickShape(scoreCtx);
+		s.color = this.getRandomColor();
 		s.width = scoreCanvas.height * 0.8;
 		s.X = scoreCanvas.width / 2 - s.width / 2;
-		s.Y = 45;
-		6;
+		s.Y = 5;
 		return s;
 	}
 	getRandomColor() {
@@ -157,9 +178,11 @@ class Game {
 			return;
 		}
 		if (
-			clickedShapes[clickedShapes.length - 1].color === this.targetColor
+			clickedShapes[clickedShapes.length - 1].color ===
+			this.targetShape.color
 		) {
 			this.score++;
+			this.targetShape = this.getRandomTargetShape();
 		} else {
 			this.isGameOver = true;
 		}
@@ -170,7 +193,7 @@ console.log(game);
 let currentTime = 0;
 let gameLoop = function (timestamp) {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	scoreCtx.clearRect(0, 0, canvas.width, canvas.height);
+	scoreCtx.clearRect(0, 0, scoreCanvas.width, scoreCanvas.height);
 	let elapsedTime = timestamp - currentTime;
 	currentTime = timestamp;
 	game.update(elapsedTime);

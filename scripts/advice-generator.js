@@ -414,6 +414,8 @@ let book = [
 	"Please not be the tea",
 	"Adam presses me into my bedroom door. 'Do you want me to open up that door.' He says his vocie raspy. 'Do you want me to trow you on the bed. Do you want me to have my way with you.' I wimper 'God. you make consent to sexy.' 'Consent is allways sexy.' I reach back and open my door.",
 	"'Darling' 'You did not say that fucking word'",
+	"'Some times when you are using the expreso machine your face gets all flushed. I always wanted to make you face flushed like that before you started making coffe.' He leans in 'By giving you the best morning sex ever' I gasp for air 'That is really thoughtfull of you' He dives under the sheet and I am done for",
+	"I want to be more than friends with you ben",
 ];
 let seting = [
 	"in hell",
