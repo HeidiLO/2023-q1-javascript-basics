@@ -14,7 +14,7 @@ class Shape {
 		this.width = 100;
 		this.height = 100;
 		this.color = "plum";
-		this.speed = 35;
+		this.speed = 50;
 		this.xDirection = 1;
 		this.yDirection = 1;
 	}
@@ -29,7 +29,7 @@ class Shape {
 		this.y += this.speed * this.yDirection;
 	}
 	draw() {
-		ctx.fillStyle = "white";
+		ctx.fillStyle = "black";
 		ctx.fillRect(this.x, this.y, this.width, this.height);
 		ctx.beginPath();
 		ctx.arc(this.x, this.y, 50, 0, 2 * Math.PI);
