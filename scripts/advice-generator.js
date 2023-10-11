@@ -37,6 +37,8 @@ let verbs = [
 	"remove from life",
 	"ignore",
 	"act like",
+	"is actally",
+	"codes with",
 ];
 let adjectives = [
 	"spiky",
@@ -173,6 +175,13 @@ let hope = [
 	"I like balls",
 	"Talk to him to see how willing he is to cheat on his wife",
 	"We ate our grandmas",
+	"You can do anything cause you Heidi",
+	"Murder is right in the middle",
+	"Is canbalism really that bad",
+	"Is bombing people all that bad",
+	"If I hit this bitch with a train",
+	"It is the evil crimnal that hits people with trains",
+	"Oh fuck it",
 ];
 let getRandomHope = function (a) {
 	return a[getRandomIndex(a)];
@@ -322,6 +331,14 @@ let quotes = [
 	"I am trevor the guy that smokes a lot of weed",
 	"If I hit this bitch with a train",
 	"It is the evil crimnal that hits people with trains",
+	"When she is here and not me I guess she is in 'charge'",
+	"Dude just open the fucking popcorn",
+	"I am gonna kill this guy",
+	"Look who is talking f saying human",
+	"'Did he eat children' 'He did but only the ones who deversed it'",
+	"I am better than everyone else",
+	"I like doing that becasue people go ahh and I like that sound",
+	"Oh fuck it",
 ];
 let non = ["life", "smile", "hair", "child", "a", "I"];
 let end = [
@@ -333,6 +350,7 @@ let end = [
 	"see ya",
 	"bye bye",
 	"adios",
+	"hope you will come back",
 ];
 let book = [
 	"He was eating toast plain toast with nothing on it have you ever seen someone eat toast with nothing on it haowing truly",
@@ -417,6 +435,10 @@ let book = [
 	"'Some times when you are using the expreso machine your face gets all flushed. I always wanted to make you face flushed like that before you started making coffe.' He leans in 'By giving you the best morning sex ever' I gasp for air 'That is really thoughtfull of you' He dives under the sheet and I am done for",
 	"I want to be more than friends with you ben",
 	"We we come out o fthe bar it is raining 'Shit run to the car' I yell over the rain. Wes turns around 'What was that', 'What' 'You acted like a total dochcanon in there' 'I acted like a donchcanon' 'Yes jesus dude, you treated that guy lik ehe had the ebolia virus' 'Maybe I just did not apprete the way he was pawing you right in front of me I slam my mouth shut. I did not just say that. 'I mean.. it was rude' Wes's mouth is slightly parted I can't take my eyes off them. I should be cold but I am not. I don't think the beer is enough to have this effect on me. Maybe its him. Maybe he's making me hot. Wes stciks his tounge out to lick a raindrop off his bottom lip. I cautch a glimsle of his tounge ring. It was not there when we were 18. It was not there we it repped around the head of my cock, 'Canning..' there is a flash of somthing in his eyes. Heat, confusion, a hint of intrest. 'Jamie' He says with a hint of warning. I suc in a breath. Ingnoe the warnings. 'What' Hes says as I rack my hands through his hair. He does not get to finish that sentance. I lean in a smash my mouth agiast his.   Jamie is kissing me. Jamie is kissing me. Jamie is kissing me. It makes no sense. The press of his lips. No sense. The shocking sweep of his tounge over my bottom lip. No sesne. But holy fucking shit I want it. He taste like beer and somthing additvly maucluine. When I part my lips for a shacky breath. He takes full adavntage and lides his tounge inside. It is like a cattle prod to spine. Disser surges through me and spirlees down to my balls drawing them up tight. I know exatlly when he feels my tounge ring. Because he wraps his tounge around the meatal stud. He moans deep and husky aganist my lips. It is that lust drenched sound that snaps me back to realty. This may feel right. But it fucking anit. At the end of the day. He is still straight and I am still gay. Even worse I am still in love with him. With a torced groan I rench my mouth from his.",
+	"When I close my eyes I see golden embers",
+	"See I knew that the cottage was a good idea",
+	"The good old quackatack",
+	"It is THE post office",
 ];
 let seting = [
 	"in hell",
@@ -433,6 +455,8 @@ let seting = [
 	"in Flodia",
 	"in Rome",
 	"in a place only metionted in fairy tails",
+	"in spanish class",
+	"on the Star Ship Enterprise",
 ];
 let main = [
 	"a teacher",
@@ -473,6 +497,12 @@ let main = [
 	"who has no singlar chararitics",
 	"an actor",
 	"a piece food",
+	"a nurse",
+	"a alien",
+	"a dog",
+	"a cleaner",
+	"a laywer",
+	"a monkey",
 ];
 let Name = [
 	"You should write about someone named Ruben",
@@ -503,6 +533,12 @@ let Name = [
 	"You should write about someone named James",
 	"You should write about someone named Arron",
 	"You should write about someone named Hilda",
+	"You should write about someone named Wendy",
+	"You should write about someone named Jassica",
+	"You should write about someone named Saywer",
+	"You should write about someone named Locke",
+	"You should write about someone named Flyin",
+	"You should write about someone named Roarke",
 ];
 let lastName = [
 	"Wesley",
@@ -524,6 +560,10 @@ let lastName = [
 	"Luacks",
 	"Didodmazo",
 	"Kos",
+	"Royal",
+	"Diaz",
+	"Hardy",
+	"Jimmy",
 ];
 let does = [
 	"who saves the world",
@@ -551,6 +591,10 @@ let does = [
 	"who murders their boss",
 	"who ignores the laws ",
 	"who acts like a crab",
+	"who acts like a human",
+	"who is actally demon",
+	"who is actally the major",
+	"who is actally the decsent of a god",
 ];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
