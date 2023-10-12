@@ -1,10 +1,5 @@
 let BN = document.getElementById("quotes-from-math");
-let advisors = [
-	"A wise man once told me",
-	"Mother always told me",
-	"My uncle Rupert once said",
-	"I once heard",
-];
+let output = document.getElementById("quote");
 let quotes = [
 	"You might get hit by a truck",
 	"I like balls",
@@ -129,14 +124,17 @@ let quotes = [
 	"I like doing that becasue people go ahh and I like that sound",
 	"Oh fuck it",
 ];
-let generateQuotes = function (q) {
-	let randomQuotes = getRandomThings(q);
-	console.log(randomQuotes);
-	return randomQuotes;
-};
-let getRandomThings = function (a) {
+let getRandomIndex = function (a) {
 	let rand = Math.random() * a.length;
 	return Math.floor(rand);
+};
+let getRandomWord = function (a) {
+	return a[getRandomIndex(a)];
+};
+let generateQuotes = function (q) {
+	let randomQuotes = getRandomWord(q);
+	console.log(randomQuotes);
+	return randomQuotes;
 };
 BN.addEventListener("click", function () {
 	let quote = generateQuotes(quotes);
