@@ -656,6 +656,9 @@ let idk = [
 	"Why don't they slap children anymore",
 	"Why do you want to slap kids so bad",
 	"I like teal day casue I get to see my spanish one and the other class",
+	"Like ya they are dead",
+	"I don't want flowers of the dead cause you love me so much",
+	"Cause I plan before hehehehehe",
 ];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
