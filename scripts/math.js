@@ -1,6 +1,18 @@
 let BN = document.getElementById("quotes-from-math");
 let output = document.getElementById("quote");
 let quotes = [
+	"Nice I killed a fanboy",
+	"Hahahaha no",
+	"I went home on friday and was like I feel old",
+	"I will dance for you and sing songs that I make up on the spot",
+	"Oh my god like what the fuck",
+	"And then we all saying but and yeah",
+	"Do not treat it like the stack of shirts at Target",
+	"Ha gotcha",
+	"Make it into a little snowball and throw it in someones eye",
+	"I am more humble then her",
+	"Who gave Jeff a knife",
+	"Aw fuck",
 	"You might get hit by a truck",
 	"I like balls",
 	"Cows don't have that",

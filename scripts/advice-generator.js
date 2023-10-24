@@ -5,6 +5,7 @@ let Btn = document.getElementById("mystery");
 let bn = document.getElementById("book");
 let b = document.getElementById("Hope");
 let n = document.getElementById("Story");
+let t = document.getElementById("IDK");
 let output = document.getElementById("advice");
 let Output = document.getElementById("dating-advice");
 let advisors = [
@@ -128,6 +129,21 @@ let who = [
 	"a first resonder",
 	"a plumer",
 	"a race car driver",
+	"Ruben",
+	"Zach",
+	"Zack",
+	"Angle",
+	"Jon",
+	"Ander",
+	"Santi",
+	"Queen Mary",
+	"Henrry",
+	"Alex",
+	"Bucky",
+	"Hudson",
+	"Ben",
+	"Nick",
+	"Felix from Stray kids",
 ];
 let when = ["Never date", "You should date", "DATE", "You need to date"];
 let whom = ["who is"];
@@ -166,6 +182,33 @@ let likes = [
 	"likes math",
 	"likes acting",
 ];
+let but = [
+	"however they eat babies",
+	"however they hate you",
+	"however they are planning on killing you family",
+	"however they are a mob boss",
+	"however they do not brush there teeth",
+	"however they are a mass murder",
+	"however they clap when a plane lands",
+	"however they will not drink water becuase it is 'boring'",
+	"however they think the earth is flat ",
+	"however they ran over your cat",
+	"however they only like old people",
+	"however they have a house full of snakes",
+	"however they have a no sense of hummor",
+	"however they always make dad jokes",
+	"however they only own things that are hot pink",
+	"however there fav. song is 'I am just Ken'",
+	"however they talk about there trama all the time",
+	"however they only eat Mac and Cheese",
+	"however they open chip bags upsidedown",
+	"however they can not tie there shoes",
+	"however they will not go to bed without tap dancing before",
+	"however they are crazy",
+	"however they when they are nerves they check there pulse ",
+	"however they can put a staw in there eyelashes",
+	"however they are in a boyband",
+];
 let hope = [
 	"Moscow Moscow Moscow Putin is hot",
 	"I could just fail out of launge arts",
@@ -182,6 +225,9 @@ let hope = [
 	"If I hit this bitch with a train",
 	"It is the evil crimnal that hits people with trains",
 	"Oh fuck it",
+	"Are war crimes war crimes",
+	"Are war crimes bad or just morally incorrect",
+	"Is today actally Monday or is it tuesday is it a saturday Just all agree that who started counting was right",
 ];
 let getRandomHope = function (a) {
 	return a[getRandomIndex(a)];
@@ -198,7 +244,7 @@ let getRandomWords = function (a) {
 let getRandomPeople = function (a) {
 	return a[getRandomIndex(a)];
 };
-let generateDatingAdvice = function (wh, wo, wm, p, l) {
+let generateDatingAdvice = function (wh, wo, wm, p, l, b) {
 	let randomDatingAdvice =
 		getRandomPeople(wh) +
 		" " +
@@ -208,7 +254,9 @@ let generateDatingAdvice = function (wh, wo, wm, p, l) {
 		" " +
 		getRandomPeople(p) +
 		" " +
-		getRandomPeople(l);
+		getRandomPeople(l) +
+		" " +
+		getRandomPeople(b);
 	console.log(randomDatingAdvice);
 	return randomDatingAdvice;
 };
@@ -439,6 +487,10 @@ let book = [
 	"See I knew that the cottage was a good idea",
 	"The good old quackatack",
 	"It is THE post office",
+	"Why are you making love a mtah eq.",
+	"I bought an island. So what",
+	"I am close. Please. Please. I am close",
+	"That was. Yeah wow. yep wow",
 ];
 let seting = [
 	"in hell",
@@ -596,6 +648,15 @@ let does = [
 	"who is actally the major",
 	"who is actally the decsent of a god",
 ];
+let idk = [
+	"Wakey Wakey",
+	"Please touch me I feel so soft and fluffy",
+	"Look at the Snow",
+	"What you doing brow",
+	"Why don't they slap children anymore",
+	"Why do you want to slap kids so bad",
+	"I like teal day casue I get to see my spanish one and the other class",
+];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
 	return Math.floor(rand);
@@ -672,12 +733,24 @@ let generateStory = function (n, l, m, d, s) {
 	console.log(randomStory);
 	return randomStory;
 };
+let generateIdk = function (i) {
+	let randomIdk = getRandomWord(i);
+	console.log(randomIdk);
+	return randomIdk;
+};
 btn.addEventListener("click", function () {
 	let advice = generateAdvice(advisors, howOften, verbs, adjectives, nouns);
 	output.textContent = advice;
 });
 BTN.addEventListener("click", function () {
-	let datingAdvice = generateDatingAdvice(when, who, whom, personalty, likes);
+	let datingAdvice = generateDatingAdvice(
+		when,
+		who,
+		whom,
+		personalty,
+		likes,
+		but
+	);
 	output.textContent = datingAdvice;
 });
 BN.addEventListener("click", function () {
@@ -712,4 +785,8 @@ b.addEventListener("click", function () {
 n.addEventListener("click", function () {
 	let Story = generateStory(Name, lastName, main, does, seting);
 	output.textContent = Story;
+});
+t.addEventListener("click", function () {
+	let Idk = generateIdk(idk);
+	output.textContent = Idk;
 });
