@@ -281,7 +281,7 @@ class Game {
 		this.lastSpawnTime = 0;
 		this.difficultyLevel = 1;
 		// update difficulty for every x number of points scored
-		this.difficultyInterval = 20;
+		this.difficultyInterval = 50;
 	}
 
 	getRandomTargetShape() {
