@@ -399,6 +399,7 @@ let end = [
 	"bye bye",
 	"adios",
 	"hope you will come back",
+	"we hate you ",
 ];
 let book = [
 	"He was eating toast plain toast with nothing on it have you ever seen someone eat toast with nothing on it haowing truly",
@@ -591,6 +592,9 @@ let Name = [
 	"You should write about someone named Locke",
 	"You should write about someone named Flyin",
 	"You should write about someone named Roarke",
+	"You should write about someone named Mary",
+	"You should write about someone named Rose",
+	"You should write about someone named Liv",
 ];
 let lastName = [
 	"Wesley",
@@ -659,6 +663,7 @@ let idk = [
 	"Like ya they are dead",
 	"I don't want flowers of the dead cause you love me so much",
 	"Cause I plan before hehehehehe",
+	"Please a little less murder and more work",
 ];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
