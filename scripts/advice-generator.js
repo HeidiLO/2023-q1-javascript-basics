@@ -664,6 +664,7 @@ let idk = [
 	"I don't want flowers of the dead cause you love me so much",
 	"Cause I plan before hehehehehe",
 	"Please a little less murder and more work",
+	"This is a little school so I don't know if you have heard of this school but,  it is called Havard",
 ];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
