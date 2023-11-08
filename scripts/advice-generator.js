@@ -673,6 +673,8 @@ let idk = [
 	"Cause I plan before hehehehehe",
 	"Please a little less murder and more work",
 	"This is a little school so I don't know if you have heard of this school but,  it is called Havard",
+	"DO YOU WANT TO BE A BILIGUEL MISQUITO ",
+	"He wants to be a bilinguel misquito",
 ];
 let getRandomThings = function (a) {
 	let rand = Math.random() * a.length;
