@@ -135,6 +135,14 @@ let quotes = [
 	"I am better than everyone else",
 	"I like doing that becasue people go ahh and I like that sound",
 	"Oh fuck it",
+	"And then we are all saying but and yeah ",
+	"Who gave Jeff a knife",
+	"I creeped in a delivered it in a stealy way",
+	"'Colrodos fineset number 420' 'We love that number here'",
+	"What I say is so important",
+	"Its like bad jokes squared ",
+	"Lets make shit up",
+	"Or your get hit in the head enough that you die",
 ];
 let getRandomIndex = function (a) {
 	let rand = Math.random() * a.length;
