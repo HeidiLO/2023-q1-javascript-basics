@@ -208,6 +208,8 @@ let but = [
 	"however they when they are nerves they check there pulse ",
 	"however they can put a staw in there eyelashes",
 	"however they are in a boyband",
+	"however they wears there clothes inside out and backwords ",
+	"however they hate music",
 ];
 let hope = [
 	"Moscow Moscow Moscow Putin is hot",
@@ -261,6 +263,7 @@ let generateDatingAdvice = function (wh, wo, wm, p, l, b) {
 	return randomDatingAdvice;
 };
 let quotes = [
+	"Pick up a pencil",
 	"Thats ioprite take a lap",
 	"You might get hit by a truck",
 	"I like balls",
@@ -443,7 +446,7 @@ let book = [
 	"I don't think I can breath agin for the rest of the drive",
 	"Zuben is here to but it's nothing compared to realm that is anjon",
 	"I am a laywer not Elton fucking Jhon",
-	"Houston we have a penis ",
+	"Houston we have a penis a famous penis ",
 	"I wonder what it would fell like to pull off his shirt and fell his soft skin under mine",
 	"I fucking love you ok ",
 	"Bein' with ya at dinner, Sitn' next to you, hearing ya talkn' its to much so like fuck self contral come back to my hotel with me tonight",
